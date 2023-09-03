@@ -1,0 +1,186 @@
+.promo {
+  display: flex;
+  text-align: center;
+
+  &__title {
+    margin: 155px 0 20px 0;
+    font-family: "Nunito";
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+
+  &__feed {
+    margin: 50px auto 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    height: 251px;
+
+    .blue-dots {
+      width: 98px;
+      height: 71px;
+      align-self: end;
+      z-index: 1;
+    }
+
+    .orange-dots {
+      align-self: start;
+
+      width: 98px;
+      height: 71px;
+
+      z-index: 1;
+    }
+
+    .feed-photo {
+      position: absolute;
+      top: 10px;
+      right: 2%;
+
+      height: 224px;
+      width: 95%;
+      object-fit: cover;
+
+      border-radius: 12px;
+
+      z-index: 2;
+    }
+
+    .feed-star {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      width: 99px;
+      height: 53px;
+
+      z-index: 3;
+
+      border-radius: 6px;
+      background: white;
+      box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+
+      .star-text {
+        font-family: "Quicksand";
+        font-size: 6px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        color: $grey-text;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .number-text {
+        text-align: center;
+        font-family: "Nunito";
+        font-size: 12px;
+        font-weight: 400;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .feed-feed {
+      padding: 13px 9px 10px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      bottom: -5px;
+      right: 0;
+
+      border-radius: 6px;
+      width: 80px;
+      height: 80px;
+
+      z-index: 3;
+
+      background: white;
+      box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .feed-head {
+      display: flex;
+      flex-direction: row;
+
+      .avatar {
+        width: 16px;
+        height: 16px;
+
+        border-radius: 100%;
+        object-fit: cover;
+      }
+
+      .person {
+        margin-left: 5px;
+
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+
+        .name {
+          text-align: left;
+          width: 26px;
+
+          font-family: "Quicksand";
+          font-size: 5px;
+          font-weight: 600;
+        }
+
+        .position {
+          font-family: "Quicksand";
+          font-size: 3px;
+          font-weight: 600;
+
+          color: $grey-text;
+        }
+      }
+    }
+
+    .feed-descr {
+      margin-top: 6px;
+
+      text-align: left;
+      font-family: "Nunito";
+      font-size: 5px;
+      font-weight: 400;
+    }
+  }
+}
+
+.elipse-blue {
+  top: 45%;
+  left: 10%;
+}
+
+.blue2 {
+  top: 65%;
+  left: 85%;
+}
+
+.elipse-orange {
+  top: 145px;
+  right: 0;
+}
+
+.orange2 {
+  top: 90%;
+  left: 15%;
+}
