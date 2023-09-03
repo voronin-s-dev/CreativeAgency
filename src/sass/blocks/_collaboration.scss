@@ -1,0 +1,52 @@
+.collaboration {
+  margin-top: 100px;
+
+  display: flex;
+
+  &__photo {
+    position: relative;
+    display: flex;
+
+    height: 275px;
+
+    img {
+      position: absolute;
+      border-radius: 16px;
+      object-fit: cover;
+
+      &:nth-child(1) {
+        right: 0;
+
+        width: 180px;
+        height: 177px;
+      }
+
+      &:nth-child(2) {
+        align-self: end;
+
+        width: 221px;
+        height: 196px;
+
+        z-index: 2;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 45px;
+
+    font-size: 28px;
+    line-height: 130%;
+  }
+
+  &__descr {
+    margin-top: 25px;
+
+    text-align: center;
+    line-height: 34px;
+  }
+
+  button {
+    margin: 25px auto 0;
+  }
+}
