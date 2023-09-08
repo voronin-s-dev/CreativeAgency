@@ -5,6 +5,7 @@
 
   &__descr {
     margin-top: 35px;
+    text-align: left;
   }
 
   &__link {
@@ -51,6 +52,7 @@
     .item-round {
       display: flex;
       justify-content: center;
+      padding: 7%;
 
       width: 100px;
       height: 100px;

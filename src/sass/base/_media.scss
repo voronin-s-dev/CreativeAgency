@@ -1168,6 +1168,48 @@
       }
     }
   }
+
+  .testimonial {
+    margin-top: 155px;
+
+    &__descr {
+      width: 255px;
+    }
+  }
+
+  .portfolio {
+    .container {
+      position: relative;
+
+      .pink-dots2 {
+        position: absolute;
+        z-index: -1;
+        bottom: 20px;
+        left: 300px;
+        transform: rotate(20deg);
+      }
+    }
+    &__descr {
+      width: 80%;
+    }
+
+    &__wrapper {
+      margin: 48px 0 34px;
+
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 49px;
+    }
+
+    &__item {
+      height: 300px;
+      transition: 0.4s;
+
+      &:nth-child(2) {
+        height: 300px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1240px) {
@@ -1481,6 +1523,7 @@
       text-align: left;
       grid-area: d;
       width: 520px;
+      padding: 0;
     }
 
     &__link {
